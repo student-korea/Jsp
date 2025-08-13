@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -12,48 +13,46 @@
 		</style>
 	</head>
 	<body>
-	 
 	 <table>
 		   <tr>
-		     <th colspan="2">화원가입</th>
+		     <th colspan="2">회원가입 - 표현식</th>
 		   </tr>
 		   <tr>
-		   	<td>닉네임</td>
-		   	<td><%=session.getAttribute("session_id") %></td>
+		     <td>아이디</td>
+		     <td><%=request.getParameter("id") %></td>
 		   </tr>
 		   <tr>
-		   	<td>닉네임</td>
-		   	<td></td>
+		     <td>패스워드</td>
+		     <td><%=request.getParameter("pw") %></td>
 		   </tr>
 		   <tr>
-		   	<td>닉네임</td>
-		   	<td></td>
+		     <td>닉네임</td>
+		     <td><%=request.getParameter("nicName") %></td>
 		   </tr>
 		   <tr>
-		     <th colspan="2"><a href="./form.jsp">화원가입페이지 이동</a></th>
+		     <th colspan="2"><a href="./form.jsp">회원가입페이지 이동</a></th>
 		   </tr>
 	 </table>
-	  <table>
+	 <table>
 		   <tr>
-		     <th colspan="2">화원가입 - EL태그</th>
+		     <th colspan="2">회원가입 - EL태그</th>
 		   </tr>
 		   <tr>
-		   	<td>아이디</td>
-		   	<td>${param.id}</td>
+		     <td>아이디</td>
+		     <td>${param.id }</td>
 		   </tr>
 		   <tr>
-		   	<td>비번</td>
-		   	<td>${param.pw}</td>
+		     <td>패스워드</td>
+		     <td>${param.pw }</td>
 		   </tr>
 		   <tr>
-		   	<td>닉네임</td>
-		   	<td>${param.nicName}</td>
+		     <td>닉네임</td>
+		     <td>${param.nicName }</td>
 		   </tr>
 		   <tr>
-		     <th colspan="2"><a href="./form.jsp">화원가입페이지 이동</a></th>
+		     <th colspan="2"><a href="./form.jsp">회원가입페이지 이동</a></th>
 		   </tr>
 	 </table>
 	 
-	
 	</body>
 </html>
